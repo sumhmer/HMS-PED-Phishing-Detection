@@ -1,0 +1,14 @@
+\begin{tabular}{lcccccc}
+\toprule
+Model & CV Acc. & Acc. (\%) & Prec. & Rec. & F1 & FPR\\
+\midrule
+Naive Bayes & 0.9182 & 91.87 & 0.9989 & 0.8473 & 0.9169 & 0.0010\\
+Decision Tree & 0.9774 & 98.28 & 0.9823 & 0.9852 & 0.9838 & 0.0200\\
+KNN & 0.8278 & 83.83 & 0.7663 & 0.9994 & 0.8675 & 0.3431\\
+Logistic Regression & 0.9939 & 99.51 & 0.9949 & 0.9958 & 0.9953 & 0.0058\\
+Stacking Ensemble & -- & 99.54 & 0.9958 & 0.9955 & \textbf{0.9956} & 0.0047\\
+\midrule
+CL-k-means (alone) & -- & 98.25 & 0.9837 & 0.9831 & 0.9834 & 0.0183\\
+\textbf{Hybrid (proposed)} & -- & 99.51 & 0.9952 & 0.9955 & 0.9953 & 0.0054\\
+\bottomrule
+\end{tabular}
