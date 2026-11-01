@@ -1,0 +1,26 @@
+# secrets -- NEVER commit your API key
+.env
+
+# Python
+__pycache__/
+*.pyc
+venv/
+.venv/
+
+# trained models are ~50 MB; regenerate with the scripts (see README)
+models/
+
+# Gemini answer cache (re-created when you run src/gemini_eval.py)
+results/gemini_cache.jsonl
+
+# Node / build
+node_modules/
+frontend/phishing-extension/node_modules/
+
+# LaTeX build files
+*.aux
+*.log
+*.out
+*.bbl
+*.blg
+*.synctex.gz

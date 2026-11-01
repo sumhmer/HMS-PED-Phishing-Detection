@@ -1,0 +1,13 @@
+# Versions used to produce the results in results/ and the paper.
+# scikit-learn must match exactly for the saved models in models/ to load;
+# otherwise just retrain (see README, ~5 minutes).
+scikit-learn==1.9.1
+pandas==3.0.5
+numpy==2.5.3
+scipy==1.18.1
+joblib==1.6.0
+matplotlib==3.11.2
+flask==3.1.3
+flask-cors==6.0.5
+python-dotenv==1.2.3
+google-genai==2.34.0
