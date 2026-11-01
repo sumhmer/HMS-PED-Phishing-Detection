@@ -1,0 +1,319 @@
+{
+  "ig_k_search": {
+    "1000": 0.9806,
+    "3000": 0.9923,
+    "5000": 0.9938
+  },
+  "ig_k_best": 5000,
+  "feature_time_s": 21.641,
+  "n_features": 5009,
+  "top_ig_terms": [
+    [
+      "wrote",
+      0.2343
+    ],
+    [
+      "org",
+      0.228
+    ],
+    [
+      "re",
+      0.2223
+    ],
+    [
+      "that",
+      0.2214
+    ],
+    [
+      "not",
+      0.2028
+    ],
+    [
+      "but",
+      0.1891
+    ],
+    [
+      "the",
+      0.187
+    ],
+    [
+      "be",
+      0.1866
+    ],
+    [
+      "mail",
+      0.1775
+    ],
+    [
+      "list",
+      0.1726
+    ],
+    [
+      "if",
+      0.1504
+    ],
+    [
+      "in",
+      0.1403
+    ],
+    [
+      "is",
+      0.139
+    ],
+    [
+      "it",
+      0.1286
+    ],
+    [
+      "mailing list",
+      0.1259
+    ],
+    [
+      "mailing",
+      0.1241
+    ],
+    [
+      "listinfo",
+      0.1241
+    ],
+    [
+      "mailman",
+      0.1219
+    ],
+    [
+      "mailman listinfo",
+      0.1199
+    ],
+    [
+      "which",
+      0.1146
+    ],
+    [
+      "aug 2008",
+      0.1125
+    ],
+    [
+      "would",
+      0.1094
+    ],
+    [
+      "should",
+      0.1091
+    ],
+    [
+      "python",
+      0.1065
+    ],
+    [
+      "there",
+      0.1056
+    ]
+  ],
+  "tuning": {
+    "Naive Bayes": {
+      "best_params": {
+        "alpha": 0.01
+      },
+      "val_f1": 0.9146,
+      "all": [
+        [
+          0.9146,
+          {
+            "alpha": 0.01
+          }
+        ],
+        [
+          0.9137,
+          {
+            "alpha": 0.1
+          }
+        ],
+        [
+          0.9086,
+          {
+            "alpha": 1.0
+          }
+        ]
+      ]
+    },
+    "Decision Tree": {
+      "best_params": {
+        "max_depth": 40,
+        "random_state": 42
+      },
+      "val_f1": 0.9816,
+      "all": [
+        [
+          0.9807,
+          {
+            "max_depth": 20,
+            "random_state": 42
+          }
+        ],
+        [
+          0.9816,
+          {
+            "max_depth": 40,
+            "random_state": 42
+          }
+        ],
+        [
+          0.9813,
+          {
+            "max_depth": null,
+            "random_state": 42
+          }
+        ]
+      ]
+    },
+    "KNN": {
+      "best_params": {
+        "n_neighbors": 3,
+        "metric": "cosine",
+        "algorithm": "brute"
+      },
+      "val_f1": 0.8735,
+      "all": [
+        [
+          0.8735,
+          {
+            "n_neighbors": 3,
+            "metric": "cosine",
+            "algorithm": "brute"
+          }
+        ],
+        [
+          0.8464,
+          {
+            "n_neighbors": 5,
+            "metric": "cosine",
+            "algorithm": "brute"
+          }
+        ],
+        [
+          0.8142,
+          {
+            "n_neighbors": 11,
+            "metric": "cosine",
+            "algorithm": "brute"
+          }
+        ]
+      ]
+    },
+    "Logistic Regression": {
+      "best_params": {
+        "C": 100.0,
+        "solver": "liblinear",
+        "max_iter": 2000
+      },
+      "val_f1": 0.9943,
+      "all": [
+        [
+          0.9822,
+          {
+            "C": 1.0,
+            "solver": "liblinear",
+            "max_iter": 2000
+          }
+        ],
+        [
+          0.9938,
+          {
+            "C": 10.0,
+            "solver": "liblinear",
+            "max_iter": 2000
+          }
+        ],
+        [
+          0.9943,
+          {
+            "C": 100.0,
+            "solver": "liblinear",
+            "max_iter": 2000
+          }
+        ]
+      ]
+    }
+  },
+  "results_test": {
+    "Naive Bayes": {
+      "accuracy": 0.9187,
+      "precision": 0.9989,
+      "recall": 0.8473,
+      "f1": 0.9169,
+      "fpr": 0.001,
+      "tp": 2813,
+      "fp": 3,
+      "tn": 2947,
+      "fn": 507,
+      "cv_mean": 0.9182,
+      "cv_std": 0.0022,
+      "train_time_s": 0.009,
+      "test_time_s": 0.003,
+      "val_f1": 0.9146
+    },
+    "Decision Tree": {
+      "accuracy": 0.9828,
+      "precision": 0.9823,
+      "recall": 0.9852,
+      "f1": 0.9838,
+      "fpr": 0.02,
+      "tp": 3271,
+      "fp": 59,
+      "tn": 2891,
+      "fn": 49,
+      "cv_mean": 0.9774,
+      "cv_std": 0.0024,
+      "train_time_s": 9.914,
+      "test_time_s": 0.028,
+      "val_f1": 0.9816
+    },
+    "KNN": {
+      "accuracy": 0.8383,
+      "precision": 0.7663,
+      "recall": 0.9994,
+      "f1": 0.8675,
+      "fpr": 0.3431,
+      "tp": 3318,
+      "fp": 1012,
+      "tn": 1938,
+      "fn": 2,
+      "cv_mean": 0.8278,
+      "cv_std": 0.0035,
+      "train_time_s": 0.011,
+      "test_time_s": 5.304,
+      "val_f1": 0.8735
+    },
+    "Logistic Regression": {
+      "accuracy": 0.9951,
+      "precision": 0.9949,
+      "recall": 0.9958,
+      "f1": 0.9953,
+      "fpr": 0.0058,
+      "tp": 3306,
+      "fp": 17,
+      "tn": 2933,
+      "fn": 14,
+      "cv_mean": 0.9939,
+      "cv_std": 0.0009,
+      "train_time_s": 1.034,
+      "test_time_s": 0.002,
+      "val_f1": 0.9943
+    },
+    "Stacking Ensemble": {
+      "accuracy": 0.9954,
+      "precision": 0.9958,
+      "recall": 0.9955,
+      "f1": 0.9956,
+      "fpr": 0.0047,
+      "tp": 3305,
+      "fp": 14,
+      "tn": 2936,
+      "fn": 15,
+      "train_time_s": 72.57,
+      "test_time_s": 5.399,
+      "val_f1": 0.9952,
+      "meta_learner": "Logistic Regression"
+    }
+  }
+}

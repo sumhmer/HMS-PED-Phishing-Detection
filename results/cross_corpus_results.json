@@ -1,0 +1,326 @@
+{
+  "CEAS -> Ling": {
+    "Naive Bayes": {
+      "accuracy": 0.8464,
+      "precision": 0.9091,
+      "recall": 0.0438,
+      "f1": 0.0835,
+      "fpr": 0.0008,
+      "tp": 20,
+      "fp": 2,
+      "tn": 2399,
+      "fn": 437
+    },
+    "Decision Tree": {
+      "accuracy": 0.7607,
+      "precision": 0.2494,
+      "recall": 0.2473,
+      "f1": 0.2484,
+      "fpr": 0.1416,
+      "tp": 113,
+      "fp": 340,
+      "tn": 2061,
+      "fn": 344
+    },
+    "KNN": {
+      "accuracy": 0.1536,
+      "precision": 0.1541,
+      "recall": 0.9562,
+      "f1": 0.2654,
+      "fpr": 0.9992,
+      "tp": 437,
+      "fp": 2399,
+      "tn": 2,
+      "fn": 20
+    },
+    "Logistic Regression": {
+      "accuracy": 0.8509,
+      "precision": 0.5618,
+      "recall": 0.3085,
+      "f1": 0.3983,
+      "fpr": 0.0458,
+      "tp": 141,
+      "fp": 110,
+      "tn": 2291,
+      "fn": 316
+    },
+    "Stacking Ensemble": {
+      "accuracy": 0.8537,
+      "precision": 0.597,
+      "recall": 0.2626,
+      "f1": 0.3647,
+      "fpr": 0.0337,
+      "tp": 120,
+      "fp": 81,
+      "tn": 2320,
+      "fn": 337
+    },
+    "CL-k-means alone": {
+      "accuracy": 0.4878,
+      "precision": 0.1563,
+      "recall": 0.5011,
+      "f1": 0.2383,
+      "fpr": 0.5148,
+      "tp": 229,
+      "fp": 1236,
+      "tn": 1165,
+      "fn": 228
+    },
+    "Hybrid (Stacking + CL-k-means)": {
+      "accuracy": 0.7908,
+      "precision": 0.3169,
+      "recall": 0.267,
+      "f1": 0.2898,
+      "fpr": 0.1095,
+      "tp": 122,
+      "fp": 263,
+      "tn": 2138,
+      "fn": 335
+    },
+    "_tau_sensitivity": {
+      "0.6": {
+        "accuracy": 0.5248,
+        "precision": 0.1738,
+        "recall": 0.5252,
+        "f1": 0.2612,
+        "fpr": 0.4752,
+        "tp": 240,
+        "fp": 1141,
+        "tn": 1260,
+        "fn": 217
+      },
+      "0.7": {
+        "accuracy": 0.5245,
+        "precision": 0.1732,
+        "recall": 0.523,
+        "f1": 0.2602,
+        "fpr": 0.4752,
+        "tp": 239,
+        "fp": 1141,
+        "tn": 1260,
+        "fn": 218
+      },
+      "0.8": {
+        "accuracy": 0.5626,
+        "precision": 0.1851,
+        "recall": 0.5098,
+        "f1": 0.2716,
+        "fpr": 0.4273,
+        "tp": 233,
+        "fp": 1026,
+        "tn": 1375,
+        "fn": 224
+      },
+      "0.9": {
+        "accuracy": 0.782,
+        "precision": 0.3096,
+        "recall": 0.2954,
+        "f1": 0.3024,
+        "fpr": 0.1254,
+        "tp": 135,
+        "fp": 301,
+        "tn": 2100,
+        "fn": 322
+      },
+      "0.95": {
+        "accuracy": 0.7785,
+        "precision": 0.2915,
+        "recall": 0.2691,
+        "f1": 0.2799,
+        "fpr": 0.1245,
+        "tp": 123,
+        "fp": 299,
+        "tn": 2102,
+        "fn": 334
+      },
+      "0.99": {
+        "accuracy": 0.7799,
+        "precision": 0.2943,
+        "recall": 0.2691,
+        "f1": 0.2811,
+        "fpr": 0.1229,
+        "tp": 123,
+        "fp": 295,
+        "tn": 2106,
+        "fn": 334
+      },
+      "1.0": {
+        "accuracy": 0.7908,
+        "precision": 0.3169,
+        "recall": 0.267,
+        "f1": 0.2898,
+        "fpr": 0.1095,
+        "tp": 122,
+        "fp": 263,
+        "tn": 2138,
+        "fn": 335
+      }
+    },
+    "_stage2_flips": 184,
+    "_stage2_correct_flips": 2,
+    "_n_train": 27254,
+    "_n_test": 2858
+  },
+  "Ling -> CEAS": {
+    "Naive Bayes": {
+      "accuracy": 0.6592,
+      "precision": 0.6373,
+      "recall": 0.8998,
+      "f1": 0.7461,
+      "fpr": 0.6429,
+      "tp": 2926,
+      "fp": 1665,
+      "tn": 925,
+      "fn": 326
+    },
+    "Decision Tree": {
+      "accuracy": 0.6734,
+      "precision": 0.7795,
+      "recall": 0.5763,
+      "f1": 0.6627,
+      "fpr": 0.2046,
+      "tp": 1874,
+      "fp": 530,
+      "tn": 2060,
+      "fn": 1378
+    },
+    "KNN": {
+      "accuracy": 0.4781,
+      "precision": 0.9012,
+      "recall": 0.0701,
+      "f1": 0.1301,
+      "fpr": 0.0097,
+      "tp": 228,
+      "fp": 25,
+      "tn": 2565,
+      "fn": 3024
+    },
+    "Logistic Regression": {
+      "accuracy": 0.8168,
+      "precision": 0.8681,
+      "recall": 0.7912,
+      "f1": 0.8279,
+      "fpr": 0.151,
+      "tp": 2573,
+      "fp": 391,
+      "tn": 2199,
+      "fn": 679
+    },
+    "Stacking Ensemble": {
+      "accuracy": 0.7453,
+      "precision": 0.726,
+      "recall": 0.8712,
+      "f1": 0.792,
+      "fpr": 0.4127,
+      "tp": 2833,
+      "fp": 1069,
+      "tn": 1521,
+      "fn": 419
+    },
+    "CL-k-means alone": {
+      "accuracy": 0.8153,
+      "precision": 0.8237,
+      "recall": 0.8502,
+      "f1": 0.8367,
+      "fpr": 0.2286,
+      "tp": 2765,
+      "fp": 592,
+      "tn": 1998,
+      "fn": 487
+    },
+    "Hybrid (Stacking + CL-k-means)": {
+      "accuracy": 0.7473,
+      "precision": 0.7266,
+      "recall": 0.8755,
+      "f1": 0.7941,
+      "fpr": 0.4135,
+      "tp": 2847,
+      "fp": 1071,
+      "tn": 1519,
+      "fn": 405
+    },
+    "_tau_sensitivity": {
+      "0.6": {
+        "accuracy": 0.7569,
+        "precision": 0.7206,
+        "recall": 0.92,
+        "f1": 0.8082,
+        "fpr": 0.4479,
+        "tp": 2992,
+        "fp": 1160,
+        "tn": 1430,
+        "fn": 260
+      },
+      "0.7": {
+        "accuracy": 0.7569,
+        "precision": 0.7206,
+        "recall": 0.92,
+        "f1": 0.8082,
+        "fpr": 0.4479,
+        "tp": 2992,
+        "fp": 1160,
+        "tn": 1430,
+        "fn": 260
+      },
+      "0.8": {
+        "accuracy": 0.7473,
+        "precision": 0.7266,
+        "recall": 0.8755,
+        "f1": 0.7941,
+        "fpr": 0.4135,
+        "tp": 2847,
+        "fp": 1071,
+        "tn": 1519,
+        "fn": 405
+      },
+      "0.9": {
+        "accuracy": 0.7473,
+        "precision": 0.7266,
+        "recall": 0.8755,
+        "f1": 0.7941,
+        "fpr": 0.4135,
+        "tp": 2847,
+        "fp": 1071,
+        "tn": 1519,
+        "fn": 405
+      },
+      "0.95": {
+        "accuracy": 0.7473,
+        "precision": 0.7266,
+        "recall": 0.8755,
+        "f1": 0.7941,
+        "fpr": 0.4135,
+        "tp": 2847,
+        "fp": 1071,
+        "tn": 1519,
+        "fn": 405
+      },
+      "0.99": {
+        "accuracy": 0.7473,
+        "precision": 0.7266,
+        "recall": 0.8755,
+        "f1": 0.7941,
+        "fpr": 0.4135,
+        "tp": 2847,
+        "fp": 1071,
+        "tn": 1519,
+        "fn": 405
+      },
+      "1.0": {
+        "accuracy": 0.7473,
+        "precision": 0.7266,
+        "recall": 0.8755,
+        "f1": 0.7941,
+        "fpr": 0.4135,
+        "tp": 2847,
+        "fp": 1071,
+        "tn": 1519,
+        "fn": 405
+      }
+    },
+    "_stage2_flips": 16,
+    "_stage2_correct_flips": 14,
+    "_n_train": 2001,
+    "_n_test": 5842
+  }
+}
